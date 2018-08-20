@@ -18,6 +18,9 @@ def Main():
 
 	args = parser.parse_args()
 
+	# set the verbositylevel for ease of outputting later on.
+	# everything that is printed at -v should also be printed at -vv and -vvv
+	# so each verbosity get its own leven and that way it can be checked later down the road
 	verbosity = 0
 	if args.verbose:
 		verbosity = 1
